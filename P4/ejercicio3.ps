@@ -1,0 +1,191 @@
+%!
+
+<< /PageSize [842 595] >> setpagedevice
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% RECTANGULOS %%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% RECTANGULO IZQUIERDO
+
+
+newpath			% Start a new path
+
+0 0 moveto
+842  0 rlineto
+0 595 rlineto
+-842  0 rlineto
+
+closepath
+
+0.83 1 0.83  setrgbcolor
+fill
+0.5 setlinewidth
+
+stroke
+
+%%%%% RECTANGULO DERECHO
+
+newpath			% Start a new path
+
+420 0 moveto
+842  0 lineto
+0 595 rlineto
+-422  0 rlineto
+
+closepath
+
+0.83 1 1 setrgbcolor
+fill
+0.5 setlinewidth
+
+stroke
+
+%%%%% RECTANGULO BORDE
+
+newpath			% Start a new path
+
+0 0 moveto
+842  0 rlineto
+0 595 rlineto
+-842  0 rlineto
+
+closepath
+
+0.6 setgray
+4 setlinewidth
+
+stroke
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HASTA AQUI RECTANGULOS %%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% FLECHA %%%%%%%%%%%%%%%%%%%%%%
+%%%%% LINEA FLECHA
+
+newpath
+10 setlinewidth 
+0 0 0 setrgbcolor
+
+10 300 moveto
+360 100 rlineto
+stroke
+
+%%%%% CABEZA FLECHA
+
+newpath
+
+0 0 0 setrgbcolor
+
+
+380 400 moveto
+-40 15 rlineto
+10 -40 rlineto 
+
+fill
+stroke
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HASTA AQUI FLECHA %%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% CIRCULOS %%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% CIRCULO IZQUIERDO
+newpath
+1 0 0 setrgbcolor
+0.1 setlinewidth
+% x  y   R  angI angF
+ 100 400  65   0   360   arc
+closepath
+fill
+
+stroke
+
+%%%%% CIRCULO DERECHO
+newpath
+1 0 0 setrgbcolor
+0.1 setlinewidth
+% x  y   R  angI angF
+ 230 400  65   0   360   arc
+closepath
+fill
+
+stroke
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HASTA AQUI CIRCULOS %%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% TRIANGULO %%%%%%%%%%%%%%%%%%%%%%
+%%%%% TRIANGULO PRINCIPAL
+
+newpath
+
+1 0 0 setrgbcolor
+
+42 370 moveto 
+246 0 rlineto
+165 200 lineto
+closepath
+fill
+
+stroke
+
+%%%%% TRIANGULO RELLENAR
+
+newpath
+
+1 0 0 setrgbcolor
+1 setlinewidth
+
+165 400 moveto 
+50 -100 rlineto
+-100 0 rlineto
+closepath
+fill
+
+stroke
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HASTA AQUI TRIANGULO %%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXTOS %%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% TEXTO "PRESENTACION"
+
+/Times-Bold findfont
+20 scalefont
+setfont
+
+  newpath
+  0.0 setgray
+  460 400 moveto
+  (EN LA AMISTAD LAS ALEGRIAS) show
+  stroke
+
+  newpath
+  0.4 setgray
+  460 360 moveto
+  (SON EL DOBLE DE ALEGRES) show
+  stroke
+
+  newpath
+  0.6 setgray
+  460 320 moveto
+  (Y LAS PENAS) show
+  stroke
+  
+  newpath
+  0.8 setgray
+  460 280 moveto
+  (LA MITAD DE TRISTES) show
+  stroke
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HASTA AQUI TEXTOS %%%%%%%%%%%%%%%%%%%%%%
+
+showpage

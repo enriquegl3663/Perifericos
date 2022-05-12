@@ -1,0 +1,137 @@
+%!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% RECTANGULOS %%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% RECTANGULO INTERIOR
+
+
+newpath			% Start a new path
+
+10 200 moveto
+575  0 rlineto
+0 360 rlineto
+-575  0 rlineto
+
+closepath
+
+0.97 1 1 setrgbcolor
+fill
+
+0.5 setlinewidth
+
+stroke
+
+%%%%% RECTANGULO EXTERIOR
+
+newpath			% Start a new path
+
+9 200 moveto
+575  0 rlineto
+0 360 rlineto
+-575  0 rlineto
+
+closepath
+
+0.67 1 1 setrgbcolor
+
+10 setlinewidth
+
+stroke
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HASTA AQUI RECTANGULOS %%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% CIRCULOS %%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% CIRCULO INTERIOR
+newpath
+0.92 0.92 0.92 setrgbcolor
+0.1 setlinewidth
+% x  y   R  angI angF
+ 100 400  70   0   360   arc
+closepath
+fill
+
+stroke
+ 
+%%%%% CIRCULO EXTEROR
+newpath
+0.92 0.92 0.08 setrgbcolor
+10 setlinewidth
+% x  y   R  angI angF
+ 100 400  70   0   360   arc
+closepath
+
+stroke
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HASTA AQUI CIRCULOS %%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXTO MONEDA %%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% TEXTO "EURO"
+
+/Times-Italic findfont   % seleccionar el tipo de fuente
+30 scalefont            % seleccionar el tamaño de fuente (20 puntos)
+setfont                 % establecer este tipo de letra como el actual
+
+newpath                 
+0.81 0.81 0.81 setrgbcolor             
+10 setlinewidth
+80 380 moveto           
+(EURO) show             
+stroke
+
+%%%%% TEXTO "1"
+
+/Times-Italic findfont   % seleccionar el tipo de fuente
+110 scalefont            % seleccionar el tamaño de fuente (20 puntos)
+setfont                 % establecer este tipo de letra como el actual
+
+newpath  
+10 setlinewidth                
+0.8 0.8 0.8 setrgbcolor       % poner el color a azul    
+40 370 moveto            
+(1) show             
+stroke
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HASTA AQUI MONEDA %%%%%%%%%%%%%%%%%%%%%% 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXTOS %%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% TEXTO "PRESENTACION"
+
+/Times-Bold findfont
+20 scalefont
+setfont
+
+  newpath
+  0.0 setgray
+  240 400 moveto
+  (Enrique y Aaron) show
+  stroke
+
+  newpath
+  0.4 setgray
+  240 350 moveto
+  (Los mejores economistas del salon) show
+  stroke
+
+  newpath
+  0.4 setgray
+  240 300 moveto
+  (Consejos financieros y mas) show
+  stroke
+  
+  newpath
+  0.4 setgray
+  240 250 moveto
+  (Tlfn: 672 54 67 89) show
+  stroke
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HASTA AQUI TEXTOS %%%%%%%%%%%%%%%%%%%%%%
+
+showpage		% We're done... eject the page
+
